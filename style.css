@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=DM+Sans:ital,opsz,wght@1,9..40,200&family=Fasthand&family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@200;400&family=Roboto:ital,wght@0,400;1,100&family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=DM+Sans:ital,opsz,wght@1,9..40,200&family=Fasthand&family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@200;400&family=Roboto:ital,wght@0,400;1,100&family=Source+Code+Pro:ital,wght@0,400;1,200&display=swap");
+@font-face {
+    font-family: "Virgil";
+    src: url("Virgil.woff2");
+    font-display: swap;
+  }
+  * {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: #ffffff;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.sidebar {
+  display: flex;
+  flex: 1;
+}
+.dropdown > button:hover {
+  background-color: rgb(243, 239, 239);
+  cursor: pointer;
+}
+.dropdown > button {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #d6d6d6;
+  background-color: white;
+  color: black;
+}
+.dropdown > button > i {
+  font-size: 15px;
+}
+.header-toolbar {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  align-items: center;
+  border: 1px solid #d6d6d6;
+  border-radius: 10px;
+  background-color: white;
+  flex: 1.5;
+  position: relative;
+  box-shadow: 0px 0px 5px black;
+}
+.vertical-line {
+  height: 30px;
+  border-right: 2px solid #d6d6d6;
+}
+.sqaure {
+  rotate: 45deg;
+}
+.header-toolbar > div {
+  font-size: 15px;
+  padding: 10px;
+}
+.header-toolbar > div > sub {
+  color: #c9c9c9;
+}
+.header-toolbar > div:hover {
+  background-color: rgb(243, 239, 239);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.header-toolbar > div:visited {
+  background-color: #e3e2fe;
+}
+i {
+  color: #555555;
+}
+.header-right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 120px;
+  flex: 1;
+}
+.header-right > button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #d6d6d6;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+}
+.header-right > button > i {
+  padding-inline: 5px;
+}
+.header-right > button:hover {
+  background-color: rgb(243, 239, 239);
+  cursor: pointer;
+}
+.people > i {
+  font-size: 20px;
+  color: white;
+  border: 1px solid;
+  background-color: #6865db;
+  padding: 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+.people > i:hover {
+  background-color: #605cdb;
+  cursor: pointer;
+}
+.draging-tool-info {
+  text-align: center;
+  font-size: 13px;
+  color: #c2c2c2;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-options {
+  position: absolute;
+  width: 320px;
+  font-size: 1rem;
+  top: 100%;
+  margin-top: 0.25rem;
+  margin-inline-start: 0.2rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+.dropdown-arrow {
+  width: 41px;
+  height: 91px;
+  color: #bdbdbd;
+}
+.diff-options {
+  color: #bdbdbd;
+  font-family: virgil;
+}
+.header-info {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: baseline;
+}
+.header-info-arrow {
+  width: 38px;
+  height: 78px;
+  color: #bdbdbd;
+}
+.info-toolbar {
+  color: #bdbdbd;
+  font-family: virgil;
+}
+.info-toolbar:hover {
+  background-color: none;
+}
+.logo {
+  color: #6865db;
+  width: 40px;
+  height: 40px;
+}
+
+.product-name {
+  color: #190064;
+  width: 229.09px;
+  height: 28px;
+  margin-left: 12px;
+}
+.main-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 230px;
+}
+.data-saved {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.125rem;
+  font-family: virgil;
+  color: #b8b8b8;
+}
+.shortcuts {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.folder-button {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  background-color: white;
+  padding: 10px;
+}
+.folder-button:hover {
+  background-color: rgb(243, 239, 239);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.folder-image > i {
+  color: #b8b8b8;
+}
+.open-folder {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  text-align: left;
+  column-gap: 0.5rem;
+  margin-left: 5px;
+  color: #b8b8b8;
+  font-size: 15px;
+}
+.command {
+  margin-left: auto;
+  color: #b8b8b8;
+  font-size: 0.75rem;
+}
+.help-button {
+  margin-top: 5px;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  background-color: white;
+  padding: 10px;
+}
+.help-button:hover {
+  background-color: rgb(243, 239, 239);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.help-option {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  text-align: left;
+  column-gap: 0.5rem;
+  margin-left: 10px;
+  color: #b8b8b8;
+  font-size: 15px;
+}
+.live-collab-button {
+  margin-top: 5px;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  background-color: white;
+  padding: 10px;
+}
+.live-collab-button:hover {
+  background-color: rgb(243, 239, 239);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.live-collab {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  text-align: left;
+  column-gap: 0.5rem;
+  margin-left: 10px;
+  color: #b8b8b8;
+  font-size: 15px;
+}
+.premium-anchor {
+  margin-top: 5px;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  background-color: white;
+  padding: 10px;
+  text-decoration: none;
+  margin-left: 15px;
+}
+.premium-anchor:hover {
+  background-color: rgb(243, 239, 239);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.premium-option {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  text-align: left;
+  column-gap: 0.5rem;
+  margin-left: 10px;
+  color: #b8b8b8;
+  font-size: 15px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+}
+.footer-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.zoom-out:hover {
+  background-color: rgb(243, 239, 239);
+  color: white;
+}
+.zoom-out,
+.screen-size-perc,
+.zoom-in {
+  border: none;
+  background-color: white;
+  font-size: 15px;
+  font-weight: 100;
+  padding-inline: 10px;
+}
+.zoom-out:hover {
+  background-color: #b8b8b8;
+}
+.footer-zoom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #b8b8b8;
+  padding: 5px;
+  border-radius: 10px;
+  margin-inline: 10px;
+}
+
+.vertical-line-2 {
+  border-right: 1px solid #b8b8b8;
+  height: 30px;
+  font-size: 15px;
+  font-weight: 100;
+  padding-inline: 10px;
+}
+.undo-button,
+.forward-button {
+  border: none;
+  background-color: white;
+}
+.forward-button {
+  margin-left: 20px;
+}
+.undo-forward {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #b8b8b8;
+  padding: 5px;
+  border-radius: 10px;
+  margin-inline: 10px;
+}
+.button-size {
+  font-size: 15px;
+}
+.footer-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10px;
+  padding: 10px;
+  position: relative;
+}
+.shield-image {
+  font-size: 15px;
+  color: #605cdb;
+}
+.question-image {
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+.question-image:hover {
+  background-color: rgb(243, 239, 239);
+}
+.help-arrow {
+  margin-top: 0.5rem;
+  width: 85px;
+  height: 71px;
+  transform: scaleX(-1) rotate(80deg);
+  color: #b8b8b8;
+}
+.shortcut-arrow {
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  margin-right: 10px;
+}
+.text-shortcut {
+  color: #b8b8b8;
+  font-family: virgil;
+}
+@media screen and (max-width: 729px) {
+  .header-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-right,
+  .shortcut-arrow,
+  .dropdown-options,
+  .header-info,
+  .draging-tool-info,
+  .sidebar,
+  .question-mark,
+  .command {
+    display: none;
+  }
+  .shortcut-arrow {
+    display: none;
+  }
+}
