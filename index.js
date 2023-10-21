@@ -2,7 +2,7 @@ const canvas = document.getElementById("canvas");
 
 canvas.width = window.innerWidth ;
 canvas.height = window.innerHeight ;
-
+const key = {C: 67};
 
 const c = canvas.getContext("2d");
 
@@ -29,4 +29,11 @@ function onMouseMove(e){
 
 function onMouseUp(e){ 
     canvas.removeEventListener("mousemove", onMouseMove);
+}
+
+document.addEventListener("keydown", clearCanvas);
+function clearCanvas(whenPressKey) {
+	if (whenPressKey.keyCode == key.C) {
+		c.clearRect(0, 0, canvas.width, canvas.height);
+	}
 }

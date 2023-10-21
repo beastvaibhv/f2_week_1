@@ -6,13 +6,12 @@ const colorPicker = document.getElementById("color-picker");
 
 colorPicker.addEventListener("change", () => {
     drawingColor = colorPicker.value ;
-    console.log(drawingColor);
+   
 });
 
 function onPencilClick() {
     pencil.classList.toggle("active")
-    isPencilActive = !isPencilActive ; // enabling the drawing 
-    // isPencilActive = !false = true
+    isPencilActive = !isPencilActive ;
     if(isPencilActive) {
         canvas.style.cursor = "crosshair";
         canvas.addEventListener("mousedown", onMouseDown); 
